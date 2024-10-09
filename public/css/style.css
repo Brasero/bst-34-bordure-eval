@@ -6,10 +6,9 @@
 html {
  font-size: 18px;
  box-sizing: border-box;
- align-content: center;
  color: #444;
  font-family: "Source Sans 3", serif;
- font-weight: 600;
+ font-weight: normal;
  line-height: 1.5;
 }
 body {
@@ -26,4 +25,73 @@ nav {
  text-align: left;
  font-family: 'Courgette', serif;
  font-size: 1.11rem;
+}
+
+a {
+ text-decoration: none;
+}
+
+blockquote {
+ background: #d7e1ef;
+}
+
+/* TEXTE SIZES */
+h1 {
+ font-size: 2.22rem;
+ text-transform: uppercase;
+}
+
+.defaultSize {
+ font-size: 1rem;
+}
+.xlSize {
+ font-size: 1.94rem;
+}
+
+.lSize {
+ font-size: 1.38rem;
+}
+
+.sSize {
+ font-size: 0.77rem;
+}
+
+/* TEXTE COLOR ALIGN & STYLE */
+.textLightBlue {
+ color: #4f89b9;
+}
+.textDarkBlue {
+ color: #003884;
+}
+.textItal {
+ font-style: italic;
+}
+.textLeft {
+ text-align: left;
+}
+.textBold {
+ font-weight: 600;
+}
+
+/* IMAGE */
+
+.floatRight {
+ float: right;
+ margin-left: 2rem;
+}
+
+.floatLeft {
+ float: left;
+ margin-right: 2rem;
+}
+
+.socials svg {
+ width: 30px;
+ height: 30px;
+}
+
+/* DECORATIONS */
+
+main {
+ border-bottom: 3px solid #003884;
 }
