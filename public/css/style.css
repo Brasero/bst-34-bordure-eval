@@ -1,56 +1,29 @@
 @font-face {
- font-family: 'Black Optimus';
- font-weight: normal;
- src: url("../font/BlackOptimusDEMO.ttf") format('truetype');
+ font-family: 'Courgette';
+ src: url("../font/Courgette-Regular.ttf") format('truetype');
 }
 
-.border5 {
- border: 5px;
- padding: 10px;
+html {
+ font-size: 18px;
+ box-sizing: border-box;
+ align-content: center;
+ color: #444;
+ font-family: "Source Sans 3", serif;
+ font-weight: 600;
+ line-height: 1.5;
+}
+body {
+ max-width: 980px;
+ text-align: center;
+ margin: 0 auto;
 }
 
-.solidBorder {
- border: solid #800080;
- font-size: 2.3em;
- font-weight: 900;
- font-style: oblique;
- text-decoration: line-through  /* underline, overline */;
- text-transform: capitalize /* uppercase, lowercase */;
- font-family:  "Black Optimus", serif, sans-serif, monospace, cursive, fantasy;
- text-align: justify-all;
+nav, h1, h2, h3, blockquote {
+ font-family: "Courgette", serif;
 }
 
-.dottedBorder {
- border: dotted #ff0000;
- font-family: "Edu AU VIC WA NT Dots", serif;
-}
-
-.dashedBorder {
- border: dashed green;
- font-family: "Teko", serif;
-}
-
-.doubleBorder {
- border: double #ff69b4;
-}
-
-.leftBorder {
- border-left: solid orange;
- padding-left: 0;
-}
-
-.roundedBorder {
- border: solid salmon;
- border-radius: 10px;
- text-align: justify;
-}
-
-.roundedImg img {
- border-radius: 50%;
- height: 250px;
- width: 250px;
-}
-
-img {
- float: right;
+nav {
+ text-align: left;
+ font-family: 'Courgette', serif;
+ font-size: 1.11rem;
 }
