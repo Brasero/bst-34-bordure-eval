@@ -5,71 +5,176 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-
-  <style>
-   @font-face {
-    font-family: "Quickly";
-    src: url("./QuicklyExquisite.ttf") format('TrueType');
-   }
-
-    * {
-     box-sizing: border-box;
-    }
-
-
-    body, html {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0;
-    }
-    div {
-      padding: 2rem;
-     margin: 2rem;
-     border: 4px solid black;
-     font-family: 'Quickly', serif;
-    }
-
-    .container {
-     display: flex;
-     max-width: 100vw;
-     padding: 0;
-     margin: 0;
-     border-color: red;
-     flex-direction: column;
-     height: 50vh;
-     align-items: flex-end;
-     justify-content: space-evenly;
-    }
-
-    .alignStart {
-     align-self: flex-start;
-    }
-
-    .listContainer {
-     display: flex;
-     justify-content: center;
-     align-items: stretch;
-     gap: 40px;
-    }
-
-
-
-  </style>
-
+  <link rel="stylesheet" href="./public/css/style.css">
+  <title>Les FlexBox</title>
 </head>
 <body>
-
-  <div class="container">
-    <div>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi ipsam laboriosam laborum maxime nemo numquam sed ullam</div>
-    <div class="alignStart">2) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, earum, itaque. Accusamus aliquam </div>
-    <div class="listContainer">
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      <p>Lorem ipsum dolor sit.</p>
-    </div>
-   </div>
-  <a href="">Ceci est un lien</a>
-  <a href="">Ceci est un lien 2</a>
+  <main>
+    <section class="default">
+      <h2>Défaut</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="rowReverse">
+      <h2>flex-direction : row-reverse</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="column">
+      <h2>flex-direction : column</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="colReverse">
+      <h2>flex-direction : column-reverse</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="noWrap">
+      <h2>nowrap</h2>
+      <ul class="parent wrapper">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="wrap">
+      <h2>wrap</h2>
+      <ul class="parent wrapper">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="alignCenter">
+      <h2>align-items : center</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="alignStart">
+      <h2>align-items : flex-start</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="alignEnd">
+      <h2>align-items : flex-end</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyCenter">
+      <h2>justify-content : center</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyStart">
+      <h2>justify-content : flex-start</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyEnd">
+      <h2>justify-content : flex-end</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyBetween">
+      <h2>justify-content : space-between</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyAround">
+      <h2>justify-content : space-around</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyEvenly">
+      <h2>justify-content : space-evenly</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
