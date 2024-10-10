@@ -103,3 +103,51 @@ h2 {
 .justifyEvenly .parent {
  justify-content: space-evenly;
 }
+
+.order .cards6 {
+ order: 1;
+}
+
+.order .cards1 {
+ order: 2;
+}
+
+/*.order .cards3 {*/
+/* order: 2;*/
+/*}*/
+
+.grow .cards {
+ flex-grow: 1;
+}
+
+.grow .cards:nth-child(3) {
+ flex-grow: 3;
+}
+
+.shrink .parent {
+ flex-wrap: wrap;
+}
+
+.shrink .cards {
+ padding: 0;
+ width: 50px;
+ flex-shrink: 2;
+}
+
+.shrink .cards:nth-child(2) {
+ flex-shrink: 1;
+}
+
+table {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
+td {
+ border: 1px solid black;
+ padding: .4rem .7rem;
+}
+
+th {
+ border: 1px solid black;
+}
