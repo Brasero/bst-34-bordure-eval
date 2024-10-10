@@ -5,157 +5,71 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-<!-- Chargement de fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<!-- Fin des chargements -->
+  <style>
+   @font-face {
+    font-family: "Quickly";
+    src: url("./QuicklyExquisite.ttf") format('TrueType');
+   }
 
-  <link rel="stylesheet" href="./public/css/style.css">
-  <title>New York</title>
+    * {
+     box-sizing: border-box;
+    }
+
+
+    body, html {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+    }
+    div {
+      padding: 2rem;
+     margin: 2rem;
+     border: 4px solid black;
+     font-family: 'Quickly', serif;
+    }
+
+    .container {
+     display: flex;
+     max-width: 100vw;
+     padding: 0;
+     margin: 0;
+     border-color: red;
+     flex-direction: column;
+     height: 50vh;
+     align-items: flex-end;
+     justify-content: space-evenly;
+    }
+
+    .alignStart {
+     align-self: flex-start;
+    }
+
+    .listContainer {
+     display: flex;
+     justify-content: center;
+     align-items: stretch;
+     gap: 40px;
+    }
+
+
+
+  </style>
+
 </head>
 <body>
-<header>
-  <img src="./public/img/seal-ny.png" alt="">
-  <h1 class="textDarkBlue">New York City</h1>
-  <img src="./public/img/new-york.jpg" alt="">
-  <nav class="textDarkBlue">
-    <ol>
-      <li><a class="textDarkBlue" href="#">Symboles</a></li>
-      <li><a class="textDarkBlue" href="#">Géographie</a></li>
-      <li><a class="textDarkBlue" href="#">Démographie</a></li>
-    </ol>
-  </nav>
-</header>
-  <main>
-    <section>
-      <blockquote class="textDarkBlue lSize">
-        <p>Il y a quelque chose dans l’air de New York qui rend le sommeil inutile.</p>
-        <cite class="defaultSize">Simone de Beauvoir</cite>
-      </blockquote>
-    </section>
-    <section id="symbole">
-      <h2 class="textLightBlue xlSize">Symboles</h2>
-      <h3 class="textDarkBlue lSize">Le drapeau</h3>
-      <img class="floatRight" src="./public/img/flag-ny.png" alt="Drapeau de la ville de New York">
-      <p class="textLeft">
-        Le drapeau de New York se compose de bandes verticales bleue,
-        blanche et orange, de largeur égale, les mêmes couleurs que le drapeau des Provinces-Unies
-        tel qu'il était utilisé en 1625, l'année où Manhattan fut colonisée.
-      </p>
-      <p class="textLeft">
-        En son centre est reproduit, en bleu, <a href="#" class="textDarkBlue textBold">le sceau de la ville.</a>
-        Sur ce dernier figurent plusieurs éléments symboliques :
-      </p>
-      <ul class="textLeft">
-        <li><span class="textLightBlue textItal">L'aigle</span> est un pygargue à tête blanche qui représente l'État de New York.</li>
-        <li><span class="textLightBlue textItal">L'Amérindien</span> évoque les premiers habitants de la région, tandis que le marin évoque les colons : leur évocation conjointe suggère l'idée d'une union entre les deux peuples.</li>
-        <li><span class="textLightBlue textItal">Les castors</span> font référence à la Compagnie néerlandaise des Indes occidentales, première compagnie à venir s'installer à New York.</li>
-        <li>Le moulin à vent, les tonneaux de farine et les fleurs en couronne, représentant l’industrie new yorkaise.</li>
-        <li>La devise latine « Sigillum Civitatis Novi Eboraci » qui signifie : « Le sceau de la ville de New York ».</li>
-      </ul>
-    </section>
-    <section id="geo">
-      <h3 class="textDarkBlue lSize">La statue de la Liberté</h3>
-      <img src="./public/img/statue-of-liberty.jpg" alt="" class="floatLeft">
-      <p class="textLeft">
-        Située sur la <a href="#" class="textBold textDarkBlue">Liberty Island</a>, au sud de Manhattan à l'embouchure de l'Hudson et à proximité d'Ellis Island.
-        Son véritable nom est <span class="textLightBlue textItal">Liberty Enlightening the World</span>, en français La Liberté éclairant le monde,
-        mais est plus connue sous le nom de statue de la Liberté (Statue of Liberty).
-      </p>
-      <p class="textLeft">
-        Pesant 204 tonnes et mesurant 92,9 mètres, elle est construite en France et offerte par le peuple français,
-        en signe d'amitié entre les deux nations et pour célébrer le centenaire de la Déclaration d'indépendance américaine.
-      </p>
-      <p class="textLeft">
-        La statue fut dévoilée au grand jour le 28 octobre 1886 en présence du président des États-Unis de l'époque,
-        Grover Cleveland. L'idée est en général attribuée au juriste et professeur au
-        Collège de France Édouard de Laboulaye. Le projet fut confié, en 1871, au sculpteur français Auguste Bartholdi.
-      </p>
-      <p class="textLeft">
-        En raison de son statut de monument universel, la statue de la Liberté a été copiée et reproduite à différentes
-        échelles et en divers endroits du globe. On en compte de nombreuses en France, la plus connue étant celle située
-        à l'extrémité de l'île aux Cygnes à la hauteur du pont de Grenelle, près de l'ancien atelier de Bartholdi,
-        qui est haute de 11,50 m. D'autres répliques sont également disséminées de part le monde :
-        à Las Vegas, au Japon, en Espagne, au Kosovo ...
-      </p>
-    </section>
 
-    <section>
-      <h2 class="textLightBlue xlSize">Géographie</h2>
-      <img src="./public/img/brooklyn-bridge.jpg" alt="Le pont de brooklyn" class="floatRight">
-      <p class="textLeft">
-        La ville s'étend sur plusieurs îles : la plus peuplée est celle de
-        <a href="#" class="textBold textDarkBlue">Manhattan</a>
-        où se trouve le cœur économique et
-        culturel de l'agglomération.
-        <a href="#" class="textBold textDarkBlue">Governors Island, Liberty Island</a>
-        et
-        <a href="#" class="textDarkBlue textBold">Ellis Island</a>
-        sont de petites îles au sud de Manhattan dont les lieux historiques sont visités par les touristes.
-        <a href="#" class="textBold textDarkBlue">Staten Island</a>
-        est l'île la plus au sud de New York. Les arrondissements de
-        <a href="#" class="textDarkBlue textItal">Brooklyn</a>
-        et
-        <a href="#" class="textDarkBlue textItal">Queens</a>
-        occupent la partie occidentale de Long Island alors que
-        le
-        <a href="#" class="textItal textDarkBlue">Bronx</a>
-        se trouve sur le continent, dans le Sud d'une presqu'île.
-      </p>
-      <p class="textLeft">
-        Cette configuration insulaire nécessite la présence de nombreux ponts et tunnels qui relient les différentes
-        parties de l'agglomération. Un service de traversiers permet également aux New-Yorkais de se déplacer facilement.
-        Plusieurs détroits comme le
-        <a href="#" class="textDarkBlue textItal">Long Island Sound</a>
-        ou
-        <a href="#" class="textDarkBlue textItal">The Narrows</a>
-        séparent les différentes îles. Les eaux profondes
-        de la baie de New York et les côtes très découpées fournissent de nombreuses autres petites baies abritées.
-        Le site de New York apparaît à la fois comme un atout (ouverture maritime, défense naturelle) mais aussi comme
-        un risque (inondations, élévation de la mer, raz-de-marée) pour la métropole.
-      </p>
-    </section>
-
-    <section>
-      <h2 class="textLightBlue xlSize">Démographie</h2>
-      <img src="./public/img/taxi-cab.jpg" alt="Les taxis de New York City" class="floatLeft">
-      <p class="textLeft">
-        La ville de New York est la ville la plus peuplée des États-Unis, avec une population deux fois supérieure à la
-        deuxième ville du pays, Los Angeles (3 743 995 habitants).
-      </p>
-      <p class="textLeft">
-        Elle compte en effet
-        <a href="#" class="textDarkBlue textBold">8 175 133 habitants </a>
-        en 2010, ce qui représente près de 40 % de la population de l'État de
-        New York. Le Grand New York ou New York Metropolitan area est l'aire urbaine la plus peuplée des États-Unis et
-        la troisième du monde derrière Tokyo et Mexico.
-      </p>
-      <p class="textLeft">
-        Cette région s'étend sur quatre États (New York, New Jersey, Connecticut, Pennsylvanie) et quelque
-        <a href="#" class="textDarkBlue textBold">17 400 km2.</a>
-        Sa population est de 18,8 millions d'habitants en 20. La CMSA de New York rassemble environ 22,2 millions
-        d'habitants en 2009.
-      </p>
-      <p class="textLeft">
-        La structure par âge révèle une population relativement jeune (11,9 % ont 65 ans ou plus) et une part importante
-        de personnes ayant l'âge de travailler (75,8 %). En 2005, l'âge médian à New York est de 35,8 ans, soit un peu
-        moins que la moyenne nationale (36,4 ans). Les femmes sont surreprésentées par rapport à la moyenne américaine
-        (52,6 % de femmes pour 47,4 % d'hommes).
-      </p>
-    </section>
-  </main>
-  <footer>
-    <h2 class="textDarkBlue xlSize">Nous retrouver sur les réseaux sociaux</h2>
-    <div class="socials">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#003884" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#003884" d="M384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h72.6l-2.2-.8c-5.4-48.1-3.1-57.5 15.7-134.7c3.9-16 8.5-35 13.9-57.9c0 0-7.3-14.8-7.3-36.5c0-70.7 75.5-78 75.5-25c0 13.5-5.4 31.1-11.2 49.8c-3.3 10.6-6.6 21.5-9.1 32c-5.7 24.5 12.3 44.4 36.4 44.4c43.7 0 77.2-46 77.2-112.4c0-58.8-42.3-99.9-102.6-99.9C153 139 112 191.4 112 245.6c0 21.1 8.2 43.7 18.3 56c2 2.4 2.3 4.5 1.7 7c-1.1 4.7-3.1 12.9-4.7 19.2c-1 4-1.8 7.3-2.1 8.6c-1.1 4.5-3.5 5.5-8.2 3.3c-30.6-14.3-49.8-59.1-49.8-95.1C67.2 167.1 123.4 96 229.4 96c85.2 0 151.4 60.7 151.4 141.8c0 84.6-53.3 152.7-127.4 152.7c-24.9 0-48.3-12.9-56.3-28.2c0 0-12.3 46.9-15.3 58.4c-5 19.3-17.6 42.9-27.4 59.3H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#003884" d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg>
+  <div class="container">
+    <div>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi ipsam laboriosam laborum maxime nemo numquam sed ullam</div>
+    <div class="alignStart">2) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, earum, itaque. Accusamus aliquam </div>
+    <div class="listContainer">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor sit.</p>
     </div>
-    <img src="./public/img/logo-3wa.png" alt="Logo de la 3W Academy"/>
-    <br/>
-    <a href="https://3wa.fr/propriete-materiel-pedagogique/" class="sSize">&copy; Ce matériel pédagogique est la propriété de la 3W Academy.</a>
-  </footer>
+   </div>
+  <a href="">Ceci est un lien</a>
+  <a href="">Ceci est un lien 2</a>
 </body>
 </html>
