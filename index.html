@@ -13,6 +13,45 @@
 </head>
 <body>
   <main>
+    <section>
+      <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="text" name="nom" placeholder="Votre nom" required value="Coucou" readonly hidden />
+        <input type="password" minlength="3" maxlength="10"  name="pass" placeholder="Votre mot de passe" required  autofocus/>
+        <input type="date" name="date" id=""/>
+        <input type="number" min="0" max="10" step="2" />
+
+
+        <input type="radio" name="choix" value="Choix 1" />
+        <input type="radio" name="choix" value="Choix 2">
+        <input type="radio" name="choix" value="Choix 3">
+
+        <label>Quel est votre animal préférer</label>
+        <label for="chien">Chien</label>
+        <input id="chien" type="checkbox" name="check[chien]" value="1" />
+        <label for="chat">chat</label>
+        <input id="chat" type="checkbox" name="check[chat]" value="1" />
+        <input type="checkbox" name="check[rat]" value="1" />
+        <input type="checkbox" name="check[hamster]" value="1" />
+
+
+        <input type="range" name="range" min="0" max="100" />
+        <input type="email" name="mail" id="email">
+
+        <input type="color" name="color" id="color" />
+
+        <select name="select[]" multiple>
+          <option value="1">Lorem ipsum.</option>
+          <option value="2">Lorem.</option>
+          <option value="3">Lorem ipsum dolor sit amet.</option>
+        </select>
+
+        <input type="file" name="fichier" />
+        <input type="submit" value="Valider" />
+      </form>
+
+    </section>
+
+
     <section class="default">
       <h2>Défaut</h2>
       <ul class="parent">
