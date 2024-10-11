@@ -25,13 +25,19 @@
         <input type="radio" name="choix" value="Choix 2">
         <input type="radio" name="choix" value="Choix 3">
 
-        <label>Quel est votre animal préférer</label>
-        <label for="chien">Chien</label>
-        <input id="chien" type="checkbox" name="check[chien]" value="1" />
-        <label for="chat">chat</label>
-        <input id="chat" type="checkbox" name="check[chat]" value="1" />
-        <input type="checkbox" name="check[rat]" value="1" />
-        <input type="checkbox" name="check[hamster]" value="1" />
+        <fieldset>
+          <legend>Quel est votre animal préférer ?</legend>
+          <label for="chien">Chien
+            <input id="chien" type="checkbox" name="check[chien]" value="1" />
+          </label>
+
+          <label for="chat">chat</label>
+          <input id="chat" type="checkbox" name="check[chat]" value="1" />
+          <label for="rat">Rat</label>
+          <input type="checkbox" id="rat" name="check[rat]" value="1" />
+          <label for="hamster">Hamster</label>
+          <input type="checkbox" id="hamster" name="check[hamster]" value="1" />
+        </fieldset>
 
 
         <input type="range" name="range" min="0" max="100" />
@@ -40,13 +46,21 @@
         <input type="color" name="color" id="color" />
 
         <select name="select[]" multiple>
-          <option value="1">Lorem ipsum.</option>
-          <option value="2">Lorem.</option>
-          <option value="3">Lorem ipsum dolor sit amet.</option>
+          <optgroup label="Groupe 1">
+            <option value="1">Lorem ipsum.</option>
+            <option value="2">Lorem.</option>
+          </optgroup>
+          <optgroup label="Groupe 2">
+            <option value="3">Lorem ipsum dolor sit amet.</option>
+          </optgroup>
         </select>
+
+        <textarea name="text" placeholder="Votre message içi ...">Votre message içi ...</textarea>
 
         <input type="file" name="fichier" />
         <input type="submit" value="Valider" />
+        <input type="button" value="Valider" />
+        <input type="reset" value="Reset" />
       </form>
 
     </section>
