@@ -1,62 +1,27 @@
-# Exercice final: Hello World
+Exercice final Move Academy
+===========================
 
-## HTML
-- Utilisation des balises sémantiques quand justifié.
-- L'affichage des titres en majuscules doit se faire EXCLUSIVEMENT à l'aide de la CSS
-- Utilisation de la balise <address> dans "Me contacter"
-- Utilisation de FontAwesome  pour les pictos.
+L’ensemble du contenu fait 1200px de large et est centré sur la page du navigateur 
+mais la couleur de fond du pied de page fait toute la largeur de la page du navigateur quelle que soit sa taille.
 
-## CSS
+# COULEURS :
+- textes : #363636
+- violet foncé : #7e4a7c
+- violet moyen : #b878b5
+- violet fond clair (tableau et formulaire) : #ffeefe
 
-- Les tailles des polices doivent être converties en taille relative.
+# POLICES :
+- par défaut : Open Sans (Google Font)
+- Economica (Google Font) pour titres, nav, boutons
 
-### Généralités
-- Police du corps de page : Lato (Google Font)
-- Couleur du texte : #333
-- Interlignage du texte : 1.5
-- Annuler les marges du body
+# TAILLE DES POLICES :
+- par défaut : 16px
+- titre : 50px
+- titres rubriques : 40px
+- titres sous-rubriques : 30px
+- menu : 24px
+- boutons "more" : 20px
+- bouton validation formulaire : 25px
+- copyright : 14px
 
-### Classe container
-- Largeur : 900px;
-- Centrer sur la page
-
-### Titres
-- Graisse : normal
-- Titre 1 : taille de 45px, couleur #007eb3, espacement des mots de 10px, bordure inférieure pointillée de 1px
-- Titre 2 : taille de 30px
-- Titre 3 : taille de 25px
-
-### header
-- Alignement du texte : centré
-- Ajouter un hyperlien index.html sur le logo
-- Couleur de fond de la navigation : #007eb3
-- Couleur des ancres vers les sections : blanc
-- Espacer les hyperliens
-
-### Main
-
-- Hyperliens : couleur #007eb3 et pas de soulignement
-- Définir 3 sections avec une ancre vers chacune dans la navigation ; mettre une marge de 30px en haut et en bas de chaque section
-
-### Section "Mes derniers voyages"
-- Texte en rouge : #F00
-- Texte en ocre : #CD8C56
-- Liens "En savoir plus" : couleur de fond #007eb3, bord arrondi de 6px
-- Largeur maximum des images : 49%
-
-### Section "À propos"
-- Appliquer l'image du fond, centrée et s'étirant sur la section
-- Jouer avec le padding et le margin pour positionner l'article comme sur la maquette
-- La largeur de l'article est de 50%
-
-### Section "Me contacter"
-- Couleurs des icônes des réseaux sociaux : #4267B2, #1da1f2, #bd081c, #8948C1
-
-## Pied de page
-
-- Couleur de fond : #007eb3
-
-## Liens de pied de page
-https://3wa.fr/propriete-materiel-pedagogique
-https://www.consultantweb.eu/
-https://pixabay.com/
+# Les pictos de réseaux sociaux sont des Font Awesome
