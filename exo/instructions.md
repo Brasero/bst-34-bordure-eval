@@ -1,28 +1,39 @@
-# Exercice dirigé: Grid Layout
+# Intégration responsive / desktop first
 
-## Les bases: index.html
+La page d'accueil et la page des réalisations sont à réaliser.
+Mettre en place les liens entre ces 2 pages.
+Exemple :
+```html
+    <a href="./realisation.html" >Réalisations</a>
+```
 
-Ajouter une SECTION avec la classe .grid dans le MAIN
-Dans cette SECTION ajouter, un header, un footer et quatre articles
+> Le contenu a un maximum de 1200px de large, mais les fonds de couleur de l'entête et du pied de page font toutes la largeur de la fenêtre du navigateur quelle que soit sa taille.
 
-### Les couleurs
+### Les points de rupture (breakpoints) :
+- 990px pour tablette
+- 680px pour mobile
+- petits mobiles 630px
 
-.bloc-header: #ddd
-.bloc-article-1: #fff
-.bloc-article-2: #fc3
-.bloc-article-3: #fa3
-.bloc-article-4: #f83
-.bloc-footer: #bbb
+### COULEURS
+- fond turquoise : #00748D
+- jaune orangé : #CB8606
+- fond gris clair: #f9f9f9
+- texte : #414141
 
-## Utilisation des areas
+### POLICES
+- Par défaut : Nunito (Google fonts)
+- Titres et nav : Fjalla One (Google fonts)
 
-Remplacer la balise MAIN par une DIV
-Ajouter une SECTION avec la classe .grid dans cette DIV
-Dans cette SECTION ajouter, un HEADER, un FOOTER une NAV, un MAIN et un ASIDE, 
+### TAILLE DES POLICES `(à adapter en valeurs relatives)`
 
-## les couleurs
-header: #ddd;
-nav: #fc3;
-main: #fff;
-aside: #fa3;
-footer: #bbb;
+- par défaut : 18px
+- titre du site : 20px
+- menu : 20px
+- titre de la page d'accueil : 30px et 20px
+- titre des pages intérieures : 30px
+- sous-titres : 25px
+- titres articles : 20px
+- textes colonne de droite : 16px
+- auteurs : 14px
+
+## L'ensemble des pictos sont des Font Awesome
