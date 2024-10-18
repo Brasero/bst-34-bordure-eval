@@ -1,0 +1,76 @@
+.flex {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 5rem;
+ position: relative;
+}
+
+
+main > div, section {
+ max-width: 80%;
+ border: 1px solid black;
+ padding: 2rem;
+}
+
+
+
+.absolu {
+ position: absolute;
+ /*top: 0;*/
+ /*left: 0;*/
+ bottom: 20%;
+ right: 0;
+}
+
+.relative {
+ position: relative;
+ top: 20px;
+ left: -50px;
+}
+
+section {
+ width: 200px;
+ padding: 0;
+ position: relative;
+}
+
+.img {
+ background: grey;
+ height: 200px;
+ width: 200px;
+}
+
+.reduc {
+ position: absolute;
+ top: 50%;
+ right: 0;
+ padding: 1rem;
+ background: red;
+ color: white;
+ width: 80%;
+ z-index: -1;
+}
+
+input {
+ height: 35px;
+}
+
+.floating {
+ position: relative;
+}
+
+.floating span {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+span {
+ transition: all .5s ease;
+}
+
+input:focus ~ span {
+ top: -15px;
+}
