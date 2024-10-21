@@ -1,0 +1,56 @@
+
+
+main {
+ max-width: 900px;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: stretch;
+ background: #EEEEEE;
+}
+
+section {
+ background: white;
+}
+
+.bloc {
+ width: 200px;
+ height: 200px;
+ margin: 0 auto;
+ background: #fc3;
+ padding: 1rem;
+}
+
+.translate div.bloc {
+ transform: translateX(50%);
+ /* Est équivalent */
+ translate: 100% 0;
+}
+
+.scale div.bloc  {
+ transform: scale(.5);
+}
+
+.rotate .bloc {
+ transform: rotate(45deg);
+}
+
+.skew .bloc {
+ transform: skew(20deg);
+}
+
+.multiple .bloc {
+ transform: scale(.5) rotate(45deg) translateX(100%);
+}
+
+.transition-container {
+ margin-top: 2rem;
+}
+
+.transition .bloc {
+ transition: .3s all ease;
+}
+
+.transition .bloc:hover {
+ transform: scale(1.5);
+}
