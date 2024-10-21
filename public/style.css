@@ -39,3 +39,41 @@ article {
 article h3 {
  font-size: 1.3rem;
 }
+
+.sticky{
+ background: #f9c;
+ position: sticky;
+ top: 0;
+}
+
+.static {
+ background: #9c6;
+ position: static;
+}
+
+.relative {
+ background: #fc3;
+ position: relative;
+ /*left: -5em;*/
+ right: 5em;
+}
+
+.relative.parent {
+ right: 0;
+}
+
+.absolute {
+ background: #f93;
+ position: absolute;
+ top: 0;
+ right: 0;
+ padding: 1em;
+}
+
+.fixed {
+ position: fixed;
+ top:0;
+ right: 0;
+ background: #69c;
+ width: 200px;
+}
