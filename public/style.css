@@ -19,6 +19,13 @@ main > div, section {
 }
 
 /*.absolu {*/
+
+/* la position "absolute" permet déplacer l'élément par rapport à la position du premier élément parent
+qui a la propriété position avec la valeur relative ou absolute. L'élément BODY est configuré
+par défaut comme étant position relative ce qui en fait une origine par défaut des éléments
+ainsi positionné.
+ */
+
 /* max-width: 100%;*/
 /* position: absolute;*/
 /* border: 3px red solid;*/
@@ -29,6 +36,9 @@ main > div, section {
 /*}*/
 
 /*.relative {*/
+
+/* La position "relative" permet de déplacer l'élément par rapport à sa position initiale dans le flux. */
+
 /* position: relative;*/
 /* border: 3px green solid;*/
 /* top: -100px;*/
@@ -37,6 +47,11 @@ main > div, section {
 /*}*/
 
 /*.card {*/
+
+/* La position "fixed" permet de positionner un élément  par rapport aux bord du viewport, c'est à dire du cadre
+d'affichage du navigateur internet. c'est le cas de parties du document qui collent au bord de
+la fenêtre du navigateur même si l'on scrolle le document. */
+
 /* position: fixed;*/
 /* bottom: 0;*/
 /* right: 0;*/
@@ -48,6 +63,13 @@ main > div, section {
 /*}*/
 
 /*.sticky {*/
+
+/* La position "sticky" permet de positionner un élément par rapport aux bord du viewport, c'est à dire du cadre
+d'affichage du navigateur internet mais seulement si l'élément est en dehors de celui ci. En
+général ce comportement s'observe lorsque l'on scrolle le document et que l'on observe des
+parties qui collent aux bord alors qu'ils qu'ils ne devraient plus être visibles. */
+
+
 /* position: sticky;*/
 /* !*width: 100%;*!*/
 /* border: 3px salmon solid;*/
@@ -84,7 +106,19 @@ main > div, section {
 }
 
 .card .reduc:hover {
+
+ /* Transform permet d'appliqué des transformation au élément, il s'utilise avec des fonction css
+  comme "rotate", "translate", "scale", ...
+  */
+
  transform: translate(-50%, -50%) scale(.7);
+
+ /* Le box-shadow permet d'appliqué une ombre à un élément, avec la valeur "inset" cette ombre est
+  intérieur, sans cette valeur elle est extérieur
+  Les valeur dans l'ordre définisse : Le décalage vertical de l'ombre, le décalage horizontal,
+  le flou, la propagation et enfin la couleur de l'ombre.
+  */
+
  box-shadow: 0px 0px 20px 10px black inset;
 }
 
@@ -101,6 +135,8 @@ main > div, section {
 
 
 /* MODAL et label flottant */
+
+/* Exemple d'une modal placé grace au position (dé-commenter ce code pour voir le résultat) */
 
 /*.modal {*/
 /* position: fixed;*/
