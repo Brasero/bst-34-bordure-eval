@@ -1,56 +1,38 @@
-
+* {
+ box-sizing: border-box;
+}
 
 main {
  max-width: 900px;
  margin: 0 auto;
  display: flex;
  flex-direction: column;
- align-items: stretch;
+ align-items: flex-start;
  background: #EEEEEE;
+ position: relative;
 }
 
-section {
- background: white;
+
+
+.elem {
+ position:relative;
+ padding: 2rem;
+ border: 1px solid red;
+}
+main:hover .elem {
+ transform: translateX(250px);
+}
+.elem.ease {
+ transition: 1s all ease;
+}
+.elem.ease-in {
+ transition: 1s all ease-in;
 }
 
-.bloc {
- width: 200px;
- height: 200px;
- margin: 0 auto;
- background: #fc3;
- padding: 1rem;
+.elem.ease-out {
+ transition: 1s all ease-out;
 }
 
-.translate div.bloc {
- transform: translateX(50%);
- /* Est équivalent */
- translate: 100% 0;
-}
-
-.scale div.bloc  {
- transform: scale(.5);
-}
-
-.rotate .bloc {
- transform: rotate(45deg);
-}
-
-.skew .bloc {
- transform: skew(20deg);
-}
-
-.multiple .bloc {
- transform: scale(.5) rotate(45deg) translateX(100%);
-}
-
-.transition-container {
- margin-top: 2rem;
-}
-
-.transition .bloc {
- transition: .3s all ease;
-}
-
-.transition .bloc:hover {
- transform: scale(1.5);
+.elem.ease-in-out {
+ transition: 1s all cubic-bezier(1,-1.07,1,.99);
 }
