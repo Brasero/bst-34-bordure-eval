@@ -39,14 +39,3 @@ article {
 article h3 {
  font-size: 1.3rem;
 }
-
-article.sticky-top {
- position: sticky;
- top: 0;
- background: #f9c;
-}
-
-.relative-left5 {
- position: relative;
- left: -5em
-}
