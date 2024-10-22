@@ -1,23 +1,70 @@
-# Exercice dirigé: Transform, transition et animation
+# Exercice final: Freshly Restaurant
 
-## transformation
+Vous devez intégrer en responsive mobile first, les pages suivantes, par ordre de priorité :
+- a minima : la page d'accueil et la page des menus
+- en option : la page de contact et la page about
 
-- Créer une section
-- Créer 5 articles ayant chacun un titre et une div avec du lorem ipsum (20) qui aura la classe box
-- Appliquer à chaque div une valeur de transform
-- chaque div avec la classe bloc fait 240px de large, a des marges intérieures de 1.5rem et une marge extérieure en bas de 3rem.
-- la couleur des boîtes est #fc3
+Le contenu sur desktop a une largeur maximum de 1400px.
+Points de rupture :
+- tablette : 780px
+- desktop : 1100px
+
+### Polices
+
+Google Fonts
+- Athiti : par défaut (graisse : 500)
+- Merienda : pour les titres
+
+### Taille des polices
+
+Par défaut : 18px
+Titre des pages : 30px
+Sous-rubriques : 25px
+Titre des menus : 20px
+Prix des menus : 50px
+Texte sous menus : 15px
+Titres du pied de page : 18px
+Texte du pied de page, boutons de tri et bouton de validation du formulaire : 16px
+
+Interlignage général de 1.5
+
+Les pictos sont des Font Awesome.
+
+### Couleurs
+
+Marron : #4c4343
+Beige : #ebe3db
+Rouge : #950000
+
+- Les ombres sur les images ont les valeurs : 3px 3px 8px rgba(76,67,67,.5)
+
+- Les ombres sur les boutons "see more" ont les valeurs : box-shadow: 2px 2px 2px silver;
+
+****************
+ PAGE D'ACCUEIL
+****************
 
 
-## transition
+Navigation
+-----------
+La rubrique de la page courante est différenciée par le fond marron.
+Au survol des rubriques, celles-ci passent progressivement à la couleur blanche pour le texte et rouge pour le fond.
 
-- Créer une section
-- Créer un 6ème article avec un titre et une div identique à celles des transform.
-- Y ajouter le CSS pour qu'au survol de l'élément un zoom de 1.5 se fasse progressivement
+Images des menus
+----------------
+Au survol des images des menus, celles-ci s'opacifient progressivement (couleur rgba(76,67,67,.9) ) et affichent le prix du menu (cf. capture d'écran)
+
+Au survol des éléments "See more" le fond passe progressivement à la couleur rouge.
+
+************
+ PAGE MENUS
+************
+
+Au survol des images des plats, faire un léger effet de zoom et afficher le nom du plat (cf. capture d'écran).
 
 
-### animation  (A ne pas faire pour le moment)
+**************
+ PAGE CONTACT
+**************
 
-- Créer une section avec une div ayant la classe bloc
-- Créez une animation CSS pour que l'élément apparaisse en même temps en zoom, en rotation et en changeant de couleur pour la valeur #3cf
-- Tester les différentes valeurs d'animation, notamment pour obtenir que la couleur #9c3 reste fixe à la fin de l'animation
+La carte est affichée avec open street map.
