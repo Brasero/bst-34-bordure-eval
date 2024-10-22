@@ -60,11 +60,11 @@ main {
   position: relative;
  }
 
- @property --angle {
-   syntax: "<angle>";
-   initial-value: 0deg;
-   inherits: false;
- }
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+ inherits: false;
+}
 
  .border-animation::before {
   content: "";
