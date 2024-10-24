@@ -1,70 +1,30 @@
-# Exercice final: Freshly Restaurant
+# Exercice dirigé: SASS
 
-Vous devez intégrer en responsive mobile first, les pages suivantes, par ordre de priorité :
-- a minima : la page d'accueil et la page des menus
-- en option : la page de contact et la page about
+## Instructions
+- Préparer une page avec un article contenant une section contenant 2 paragraphes
+- Placer un titre de niveau 1 dans le main, un titre de niveau 2 dans l'article et un titre de niveau 3 dans la section
 
-Le contenu sur desktop a une largeur maximum de 1400px.
-Points de rupture :
-- tablette : 780px
-- desktop : 1100px
+## Feuille de style
+Remplacer la feuille de style theme.css par un fichier theme.scss (Ne pas créer la feuille de style theme.css, elle sera générée automatiquement)
 
-### Polices
+## Pour executer SASS
+Dans l'IDE, ouvrir la console (fond bleu)
+Parcourir les dossiers pour arriver dans le dossier de l'exercice en utilisant la commande cd, par exemple
+````
+cd inte/module-5/demo-sass/css/
+````
 
-Google Fonts
-- Athiti : par défaut (graisse : 500)
-- Merienda : pour les titres
+Vérifier la liste des fichiers d'un dossier avec la commande ls
 
-### Taille des polices
+Executer SASS avec la commande "sass <fichier.scss> <fichier.css>, par exemple
+````
+sass theme.scss theme.css
+````
 
-Par défaut : 18px
-Titre des pages : 30px
-Sous-rubriques : 25px
-Titre des menus : 20px
-Prix des menus : 50px
-Texte sous menus : 15px
-Titres du pied de page : 18px
-Texte du pied de page, boutons de tri et bouton de validation du formulaire : 16px
+Le fichier theme.css doit être généré directement dans le dossier avec un fichier "theme.css.map" qui sert à consulter le fichier .scss depuis l'inspecteur
 
-Interlignage général de 1.5
-
-Les pictos sont des Font Awesome.
-
-### Couleurs
-
-Marron : #4c4343
-Beige : #ebe3db
-Rouge : #950000
-
-- Les ombres sur les images ont les valeurs : 3px 3px 8px rgba(76,67,67,.5)
-
-- Les ombres sur les boutons "see more" ont les valeurs : box-shadow: 2px 2px 2px silver;
-
-****************
- PAGE D'ACCUEIL
-****************
-
-
-Navigation
------------
-La rubrique de la page courante est différenciée par le fond marron.
-Au survol des rubriques, celles-ci passent progressivement à la couleur blanche pour le texte et rouge pour le fond.
-
-Images des menus
-----------------
-Au survol des images des menus, celles-ci s'opacifient progressivement (couleur rgba(76,67,67,.9) ) et affichent le prix du menu (cf. capture d'écran)
-
-Au survol des éléments "See more" le fond passe progressivement à la couleur rouge.
-
-************
- PAGE MENUS
-************
-
-Au survol des images des plats, faire un léger effet de zoom et afficher le nom du plat (cf. capture d'écran).
-
-
-**************
- PAGE CONTACT
-**************
-
-La carte est affichée avec open street map.
+## Couleurs utilisées
+base: #369
+title-1: #c33
+title-2: #a32929
+title-3: #7a1f1f
