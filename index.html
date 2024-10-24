@@ -5,46 +5,104 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./public/css/style.css">
-  <title>Sass</title>
+  <title>Bootstrap</title>
 </head>
-<body>
-<header>
-  <h1>test Sass</h1>
-  <nav>
-    <ul>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-    </ul>
-  </nav>
-</header>
+<body class="container-fluid">
+<main class="container">
+  <h1>Un exemple de titre h1</h1>
+  <h2 class="text-danger">Un exemple de titre h2 (avec une couleur personnalisée)</h2>
+  <h3>Ceci est un h3</h3>
+  <div class="card mt-5" style="width: 18rem;">
+    <img src="./public/large.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
 
-<main>
-  <section class="card flex-alignCenter">
-    <div class="card__header">
-      <h2 class="card__header__title">card title</h2>
+  <div class="row">
+    <div class="card mt-5 col" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
-    <div class="card__body">
-      <p class="card__body__content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem ducimus illum molestias nemo velit veniam. Consectetur ducimus ipsam laboriosam neque nisi officia similique. Eaque.
-      </p>
-      <p class="card__body__content-xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, suscipit.
-      </p>
+    <div class="card mt-5 col" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
-  </section>
-  <div class="item1">text1</div>
-  <div class="item2">text2</div>
-  <div class="item3">text3</div>
-  <div class="item4">text4</div>
-  <div class="item5">text5</div>
-  <div class="item6">text6</div>
-  <div class="item7">text7</div>
-  <div class="item8">text8</div>
-  <div class="item9">text9</div>
-  <div class="item10">text10</div>
+    <div class="card mt-5 col" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <table class="table mt-5">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <th colspan="2" scope="row">Larry the Bird</th>
+      <th scope="row">@twitter</th>
+    </tr>
+    </tbody>
+  </table>
+
+  <form class="container">
+    <h4 class="h2">Mes coordonnées</h4>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Prénom</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword2" class="form-label">Nom</label>
+      <input type="password" class="form-control" id="exampleInputPassword2">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword3" class="form-label">Email</label>
+      <input type="password" class="form-control" id="exampleInputPassword3">
+    </div>
+
+    <h4 class="h2">Ma demande</h4>
+    <input class="form-control form-control-lg" type="text" placeholder="L'objet de ma demande..." aria-label=".form-control-lg example">
+    <div class="form">
+      <textarea class="form-control" id="floatingTextarea"></textarea>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Valider le formulaire</button>
+  </form>
+
+
 </main>
+
 </body>
 </html>

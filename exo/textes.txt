@@ -1,53 +1,40 @@
-SASS
-Mettre en pratique le préprocesseur SASS
+Bootstrap
+Introduction à Bootstrap, premiers tests
 
-Titre du main
-Titre de l'article
-Titre de la section
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quos, explicabo placeat quis magni consectetur similique praesentium ea fugit ab beatae officiis. Voluptates dolorem aliquid laudantium consectetur facere consequatur sed!
+Un exemple de titre h1
+Un exemple de titre h2 (avec une couleur personnalisée)
+Un exemple de titre h3
+Un exemple de texte dans un paragraphe contenant un Lien vide (dont l'adresse est simplement l'ancre vide #)
 
-Molestiae, facere, fugiat, obcaecati, ipsa animi consequatur commodi ullam accusantium natus laudantium quam nisi veritatis alias nobis quas inventore temporibus consectetur sed. A, id, alias voluptas blanditiis commodi hic reprehenderit.
+Un exemple de div ayant la classe "alert alert-success"
+...
+Une carte
+Un exemple de texte dans une carte.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.
+Une carte
+Un exemple de texte dans une carte.
 
-Rem accusantium repellendus cumque adipisci maiores odit repudiandae doloremque quod.
+Une carte
+Un exemple de texte dans une carte.
 
-Velit placeat pariatur, veniam cum optio itaque tenetur perferendis ex?
+Une carte
+Un exemple de texte dans une carte.
 
-Ut totam voluptatum voluptas assumenda voluptates atque commodi perferendis numquam.
+Une carte
+Un exemple de texte dans une carte.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.
+Entête 1	Entête 2	Entête 3	Entête 4
+Pied 1	Pied 2	Pied 3	Pied 4
+Case 1	Case 2	Case 3	Case 4
+Case 5	Case 6	Case 7	Case 8
+Case 9	Case 10	Case 11	Case 12
+Mes coordonnées
+Prénom
+Nom
+Email
+Ma demande
 
-Rem accusantium repellendus cumque adipisci maiores odit repudiandae doloremque quod.
-
-Velit placeat pariatur, veniam cum optio itaque tenetur perferendis ex?
-
-Ut totam voluptatum voluptas assumenda voluptates atque commodi perferendis numquam.
-
-Laboriosam velit eligendi aut totam a suscipit cumque omnis esse!
-
-Totam vitae nemo voluptatem quasi quisquam voluptas cupiditate voluptate? Quae!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.
-
-Rem accusantium repellendus cumque adipisci maiores odit repudiandae doloremque quod.
-
-Velit placeat pariatur, veniam cum optio itaque tenetur perferendis ex?
-
-Ut totam voluptatum voluptas assumenda voluptates atque commodi perferendis numquam.
-
-Laboriosam velit eligendi aut totam a suscipit cumque omnis esse!
-
-Totam vitae nemo voluptatem quasi quisquam voluptas cupiditate voluptate? Quae!
-
-Reiciendis magnam error perspiciatis libero, velit mollitia quae adipisci in!
-
-Nihil ipsum eaque officiis dolorum debitis excepturi. Eligendi, ratione in!
-
-Numquam quisquam blanditiis minus quidem iste quibusdam earum enim corporis?
-
-Esse officia illo asperiores non. Laboriosam harum itaque distinctio facilis.
-
+Choisir l'objet de ma demande...
 Propriété de la 3W Academy
 
 Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.
