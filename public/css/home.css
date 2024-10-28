@@ -80,9 +80,9 @@ section.menus .card {
 }
 
 .card button {
- background: #4c4343;
+ background: var(--brown);
  text-align: center;
- color: #EBE2DB;
+ color: var(--white);
  border: none;
  align-self: center;
  width: 90%;
@@ -92,6 +92,11 @@ section.menus .card {
  align-items: center;
  justify-content: center;
  gap: .4rem;
+ transition: .5s all ease;
+}
+
+.card button:hover {
+ background: var(--red);
 }
 
 .card button i {
@@ -100,6 +105,59 @@ section.menus .card {
  aspect-ratio: 1/1;
  display: block;
 }
+
+.card .img {
+ display: flex;
+ position: relative;
+}
+.card .img .filter,
+.card .img .content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ transition: .5s all ease;
+ opacity: 0;
+}
+
+.card .img .filter {
+ background: rgba(76,67,67,.9);
+ width: 100%;
+ height: 100%;
+}
+
+.card .img .content {
+ width: 90%;
+ height: 80%;
+ border: 5px solid var(--white);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ color: var(--white);
+}
+
+.card .img .content .price {
+ font-size: 2.77rem;
+ font-weight: 600;
+}
+.card .img .content .price::after {
+ content: "$";
+ margin-left: 1rem;
+}
+
+.card .img .content .text {
+ font-size: .83rem;
+ font-style: italic;
+ width: 55%;
+ text-align: center;
+}
+
+.card .img:hover .content,
+.card .img:hover .filter {
+ opacity: 1;
+}
+
 
 @media screen and (min-width: 1100px) {
  section.about div.container {
